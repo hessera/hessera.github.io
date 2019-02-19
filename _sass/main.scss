@@ -1,13 +1,14 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: auto minmax(300px, 800px) auto;
+  grid-template-rows: 100px auto 50px;
 }
 header {
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 1;
+  text-align: center;	
 }
 #content {
   grid-column-start: 2;

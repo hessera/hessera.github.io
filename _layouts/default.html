@@ -7,9 +7,19 @@
   </head>
   <body>
     <div class="container">
-      <header>{% include navigation.html %}</header>
+      <header>
+        {% include header.html %}
+        {% include navigation.html %}
+      </header>
       <section id="content">{{ content }}</section>
-      <footer>Footer</footer>
+      <footer>
+        <nav>
+          <ul>
+            <li><a href="">Lorem Ipsum</a></li>
+            <li><a href="">Lorem Ipsum</a></li>
+          </ul>
+        </nav>
+      </footer>
     </div>
   </body>
 </html>
