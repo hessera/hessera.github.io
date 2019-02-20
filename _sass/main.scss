@@ -1,7 +1,23 @@
+// font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+// line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+
+body {
+  font: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))) $font-stack;
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
+
+h1 {
+  font-size: calc(18px + (48 - 18) * ((100vw - 300px) / (1600 - 300))) ;
+  padding: 0.5em 0 0.25em 0;
+}
+h2 {
+  font-size: 3.0vh;
+}
+
 .container {
   display: grid;
   grid-template-columns: auto minmax(300px, 800px) auto;
-  grid-template-rows: 100px auto 50px;
+  grid-template-rows: 150px auto 50px;
 }
 header {
   grid-column-start: 2;

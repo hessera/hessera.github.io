@@ -11,4 +11,8 @@ footer > nav > ul {
 
     -webkit-flex-flow: row wrap;
     justify-content: center;
+
+    li {
+        padding: 0.5em;
+    }
 }
