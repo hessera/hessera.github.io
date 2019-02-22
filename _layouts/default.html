@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    {% seo %}
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
@@ -13,12 +14,7 @@
       </header>
       <section id="content">{{ content }}</section>
       <footer>
-        <nav>
-          <ul>
-            <li><a href="">Lorem Ipsum</a></li>
-            <li><a href="">Lorem Ipsum</a></li>
-          </ul>
-        </nav>
+        {% include footer.html %}
       </footer>
     </div>
   </body>

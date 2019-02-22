@@ -1,2 +1,5 @@
 collections:
   - staff_members
+
+plugins:
+  - jekyll-seo-tag

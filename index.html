@@ -1,10 +1,12 @@
 ---
 layout: default
 title: Home
+description: Awesome Site
 ---
 {% for post in site.posts %}
     <article>
         <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
         <p>{{ post.excerpt }}</p>
+        <p>Zum <a href="{{ post.url }}">{{ post.title }}</a> Rezept</p>
     </article>
 {% endfor %}
